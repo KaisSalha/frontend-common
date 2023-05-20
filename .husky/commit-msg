@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx git-branch-is -q gh-action-temp-deployment-branch || npx commitlint --edit $1

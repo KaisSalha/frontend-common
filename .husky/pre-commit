@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Check the changed files for linting violations as well as formatting.
+npx lint-staged

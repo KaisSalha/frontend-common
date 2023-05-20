@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": false,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": false,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "react",
+		"incremental": true,
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"allowSyntheticDefaultImports": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"baseUrl": "src",
+		"declaration": true,
+		"declarationDir": "build",
+		"sourceMap": true
+	},
+
+	"include": ["src/**/*"],
+	"exclude": ["**/*.test.ts"]
+}
