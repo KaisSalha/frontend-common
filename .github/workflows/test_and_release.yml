@@ -31,9 +31,7 @@ jobs:
           scope: "@kaissalha"
 
       - name: Install
-        run: npm ci
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+        run: npm install
 
       - name: Lint
         run: npm run lint
