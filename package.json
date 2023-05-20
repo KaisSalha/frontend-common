@@ -31,7 +31,7 @@
 		"lint:fix": "eslint --fix . || true",
 		"prepare": "husky install",
 		"release": "semantic-release",
-		"test": "jest",
+		"test": "jest --passWithNoTests",
 		"typecheck": "tsc --noEmit -p . --skipLibCheck"
 	},
 	"config": {
