@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.2](https://github.com/kaissalha/frontend-common/compare/v1.2.1...v1.2.2) (2023-05-23)
+
+
+### Bug Fixes
+
+* fix locale type to work with nextjs ([8114357](https://github.com/kaissalha/frontend-common/commit/8114357dadbdc7fea2c6f405e7cce890b5d9c92c))
+* fix path to types ([12f038c](https://github.com/kaissalha/frontend-common/commit/12f038cd1faa885dda24c67a7eb2b026c733f084))
+
 ## [1.2.1](https://github.com/kaissalha/frontend-common/compare/v1.2.0...v1.2.1) (2023-05-23)
 
 
