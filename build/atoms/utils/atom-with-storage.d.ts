@@ -1,1 +1,0 @@
-export declare const atomWithStorage: <T>(key: string, initialValue: T) => import("jotai").WritableAtom<T, [T | typeof import("jotai/utils").RESET | ((prev: T) => T | typeof import("jotai/utils").RESET)], void>;
