@@ -23,6 +23,6 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CapabilitiesApi = void 0;
-exports.CapabilitiesApi = __importStar(require("./capabilities-api"));
+exports.CmsApi = void 0;
+exports.CmsApi = __importStar(require("./cms-api"));
 //# sourceMappingURL=index.js.map

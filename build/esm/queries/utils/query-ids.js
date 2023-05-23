@@ -1,4 +1,4 @@
 export const QUERY_IDS = {
-    capabilities: "CAPABILITIES",
+    categories: "CATEGORIES",
 };
 //# sourceMappingURL=query-ids.js.map

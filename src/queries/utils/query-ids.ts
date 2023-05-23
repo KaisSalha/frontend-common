@@ -1,3 +1,3 @@
 export const QUERY_IDS = {
-	capabilities: "CAPABILITIES",
+	categories: "CATEGORIES",
 };
