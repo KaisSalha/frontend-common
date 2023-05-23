@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/kaissalha/frontend-common/compare/v1.1.0...v1.2.0) (2023-05-23)
+
+
+### Features
+
+* localization support ([cd6051d](https://github.com/kaissalha/frontend-common/commit/cd6051d57b7aee07f9e9e463597e391990e13eac))
+
+
+### Bug Fixes
+
+* fix locale typings ([de6d652](https://github.com/kaissalha/frontend-common/commit/de6d65231b8802f409ff258fe74233621ba6cf34))
+* lintstaged ([d14dd57](https://github.com/kaissalha/frontend-common/commit/d14dd578b23edb999de0fa7386b60fa59f3ca2d2))
+
 ## [1.1.0](https://github.com/kaissalha/frontend-common/compare/v1.0.0...v1.1.0) (2023-05-23)
 
 
