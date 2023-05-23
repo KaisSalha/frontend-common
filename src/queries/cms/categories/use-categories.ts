@@ -7,7 +7,7 @@ import { CmsApi } from "../../../services/api";
 export const useCategories = () => {
 	const { locale } = useLocale();
 
-	return useQuery(getQueryKey([QUERY_IDS.categories]), async () =>
+	return useQuery(getQueryKey([QUERY_IDS.categories, locale]), async () =>
 		CmsApi.getCategories({ locale })
 	);
 };
