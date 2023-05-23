@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/kaissalha/frontend-common/compare/v1.2.0...v1.2.1) (2023-05-23)
+
+
+### Bug Fixes
+
+* fix import paath ([da6df3d](https://github.com/kaissalha/frontend-common/commit/da6df3deea040b69fa8fbed55af00e5e9f14b5d3))
+
 ## [1.2.0](https://github.com/kaissalha/frontend-common/compare/v1.1.0...v1.2.0) (2023-05-23)
 
 
