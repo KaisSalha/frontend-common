@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/kaissalha/frontend-common/compare/v1.0.0...v1.1.0) (2023-05-23)
+
+
+### Features
+
+* category hooks ([27deee3](https://github.com/kaissalha/frontend-common/commit/27deee349706baf5c04fba2a58ec4e023dc56104))
+
 ## 1.0.0 (2023-05-20)
 
 
