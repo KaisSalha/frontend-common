@@ -1,4 +1,5 @@
 import { AxiosResponse } from "axios";
+import { Locale } from "../../providers/LocaleProvider";
 import { getWithAuth } from "./utils/api-common";
 import { ApiClient } from "./utils/api-client";
 
@@ -18,10 +19,14 @@ ApiClient.registerService({
 	},
 });
 
-export const getCategories = async (): Promise<any> => {
+export const getCategories = async ({
+	locale,
+}: {
+	locale: Locale;
+}): Promise<any> => {
 	const response: AxiosResponse<any> = await getWithAuth(
 		ApiClient.getClient(serviceName),
-		"/categories"
+		`/categories?locale=${locale}`
 	);
 
 	return response.data;
@@ -29,12 +34,14 @@ export const getCategories = async (): Promise<any> => {
 
 export const getCategoryBySlug = async ({
 	slug,
+	locale,
 }: {
 	slug: string;
+	locale: Locale;
 }): Promise<any> => {
 	const response: AxiosResponse<any> = await getWithAuth(
 		ApiClient.getClient(serviceName),
-		`/categories/slug/${slug}`
+		`/categories/slug/${slug}?locale=${locale}`
 	);
 
 	return response.data;
