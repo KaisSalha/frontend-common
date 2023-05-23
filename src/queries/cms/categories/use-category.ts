@@ -1,5 +1,6 @@
 import { QueryClient, useQuery } from "@tanstack/react-query";
-import { Locale, useLocale } from "../../../providers/LocaleProvider";
+import { Locale } from "../../../types";
+import { useLocale } from "../../../providers/LocaleProvider";
 import { getQueryKey } from "../../utils/get-query-key";
 import { QUERY_IDS } from "../../utils/query-ids";
 import { CmsApi } from "../../../services/api";
