@@ -6,7 +6,7 @@ import React, {
 	useMemo,
 	useState,
 } from "react";
-import { Locale } from "types";
+import { Locale } from "../types";
 
 export const LocaleContext = createContext<{
 	locale: Locale;

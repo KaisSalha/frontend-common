@@ -1,5 +1,5 @@
 import { QueryClient, useQuery } from "@tanstack/react-query";
-import { Locale } from "types";
+import { Locale } from "../../../types";
 import { useLocale } from "../../../providers/LocaleProvider";
 import { getQueryKey } from "../../utils/get-query-key";
 import { QUERY_IDS } from "../../utils/query-ids";

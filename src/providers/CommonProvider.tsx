@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { Locale } from "types";
+import { Locale } from "../types";
 import { AuthProvider } from "./AuthProvider";
 import { LocaleProvider } from "./LocaleProvider";
 
