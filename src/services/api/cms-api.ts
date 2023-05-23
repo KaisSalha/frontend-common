@@ -1,5 +1,5 @@
 import { AxiosResponse } from "axios";
-import { Locale } from "../../providers/LocaleProvider";
+import { Locale } from "types";
 import { getWithAuth } from "./utils/api-common";
 import { ApiClient } from "./utils/api-client";
 

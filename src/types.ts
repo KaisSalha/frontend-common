@@ -1,1 +1,1 @@
-export type Test2 = string;
+export type Locale = "en" | "ar" | string | undefined;

@@ -6,8 +6,7 @@ import React, {
 	useMemo,
 	useState,
 } from "react";
-
-export type Locale = "en" | "ar";
+import { Locale } from "types";
 
 export const LocaleContext = createContext<{
 	locale: Locale;
@@ -27,7 +26,7 @@ export const LocaleProvider: React.FC<Props> = ({
 	children,
 	defaultLocale,
 }) => {
-	const [locale, setLocale] = useState<Locale>(defaultLocale);
+	const [locale, setLocale] = useState<Locale>(defaultLocale || "en");
 
 	useEffect(() => {
 		if (locale !== defaultLocale) setLocale(defaultLocale);
