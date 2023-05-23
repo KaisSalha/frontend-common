@@ -1,5 +1,4 @@
 {
-	"*.{ts,tsx,js,jsx}": "eslint --cache",
-	"*.{ts,tsx,js,jsx}": "typecheck",
+	"*.{ts,tsx,js,jsx}": "eslint --cache; typecheck",
 	"*.{ts,tsx,js,jsx,json}": "prettier --check"
 }
