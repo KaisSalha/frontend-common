@@ -20,7 +20,7 @@ interface Params {
 
 export const getCategoriesSSR = async ({ queryClient, locale }: Params) => {
 	await queryClient.prefetchQuery(
-		getQueryKey([QUERY_IDS.categories]),
+		getQueryKey([QUERY_IDS.categories, locale]),
 		async () =>
 			CmsApi.getCategories({
 				locale,

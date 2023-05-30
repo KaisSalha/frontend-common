@@ -32,7 +32,7 @@ interface Params extends Props {
 
 export const getCategorySSR = async ({ queryClient, slug, locale }: Params) => {
 	await queryClient.prefetchQuery(
-		getQueryKey([QUERY_IDS.categories, slug]),
+		getQueryKey([QUERY_IDS.categories, slug, locale]),
 		async () =>
 			CmsApi.getCategoryBySlug({
 				slug,
