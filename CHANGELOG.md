@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.3](https://github.com/kaissalha/frontend-common/compare/v1.2.2...v1.2.3) (2023-05-30)
+
+
+### Bug Fixes
+
+* fix locale in ssr query key ([accbd62](https://github.com/kaissalha/frontend-common/commit/accbd6217484ff697155936e2b9047cd8fede64f))
+* fix locale in ssr query key ([59b4bcc](https://github.com/kaissalha/frontend-common/commit/59b4bcc4b3820a493256cbe82e6463c27ea155de))
+
 ## [1.2.2](https://github.com/kaissalha/frontend-common/compare/v1.2.1...v1.2.2) (2023-05-23)
 
 
