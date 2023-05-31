@@ -2,7 +2,7 @@ export type Locale = "en" | "ar" | string | undefined;
 
 export type Content = {
 	type?: string;
-	children: Node[];
+	children: Content[];
 	bold?: boolean;
 	code?: boolean;
 	italic?: boolean;
