@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.1](https://github.com/kaissalha/frontend-common/compare/v1.3.0...v1.3.1) (2023-05-31)
+
+
+### Bug Fixes
+
+* content type ([907e8b4](https://github.com/kaissalha/frontend-common/commit/907e8b47003405e1fc087026de6106a14e4fec20))
+* fix content type ([54764f3](https://github.com/kaissalha/frontend-common/commit/54764f30c7b5a1c8abbace2fca798a77ffbf4197))
+
 ## [1.3.0](https://github.com/kaissalha/frontend-common/compare/v1.2.4...v1.3.0) (2023-05-31)
 
 
