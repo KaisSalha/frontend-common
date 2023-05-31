@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.3](https://github.com/kaissalha/frontend-common/compare/v1.3.2...v1.3.3) (2023-05-31)
+
+
+### Bug Fixes
+
+* **cms-api:** content return type should be an array ([5f7db85](https://github.com/kaissalha/frontend-common/commit/5f7db856cd3865466e1515bc8d484b515147ecbd))
+* **cms-api:** content return type should be an array ([14ebdd7](https://github.com/kaissalha/frontend-common/commit/14ebdd737b657f35278ecd0b26f532aa4e5ecadb))
+
 ## [1.3.2](https://github.com/kaissalha/frontend-common/compare/v1.3.1...v1.3.2) (2023-05-31)
 
 
