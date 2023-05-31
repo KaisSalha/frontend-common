@@ -29,7 +29,7 @@ export const getCategories = async ({
 		`/categories?locale=${locale}`
 	);
 
-	return response.data;
+	return response.data?.docs;
 };
 
 export const getCategoryBySlug = async ({
@@ -44,5 +44,5 @@ export const getCategoryBySlug = async ({
 		`/categories/slug/${slug}?locale=${locale}`
 	);
 
-	return response.data;
+	return response.data?.docs[0];
 };
