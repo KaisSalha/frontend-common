@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.4](https://github.com/kaissalha/frontend-common/compare/v1.2.3...v1.2.4) (2023-05-31)
+
+
+### Bug Fixes
+
+* remove pagination from apis that dont need it ([4d237cd](https://github.com/kaissalha/frontend-common/commit/4d237cd75d457fe3570d73bf0a007a75886b69cc))
+* remove pagination from apis that dont need it ([dbc6754](https://github.com/kaissalha/frontend-common/commit/dbc67543664a9d4229b0f7d9104a6293acafca1d))
+
 ## [1.2.3](https://github.com/kaissalha/frontend-common/compare/v1.2.2...v1.2.3) (2023-05-30)
 
 
