@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/kaissalha/frontend-common/compare/v1.2.4...v1.3.0) (2023-05-31)
+
+
+### Features
+
+* add types for hooks return ([ff8acb1](https://github.com/kaissalha/frontend-common/commit/ff8acb12295e91845a0dd78fec1955652a412f79))
+* add types for hooks return ([016614e](https://github.com/kaissalha/frontend-common/commit/016614e75e935c0712acadfc542d9ba172869c3e))
+
 ## [1.2.4](https://github.com/kaissalha/frontend-common/compare/v1.2.3...v1.2.4) (2023-05-31)
 
 
