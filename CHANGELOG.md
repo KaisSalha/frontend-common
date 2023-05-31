@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.2](https://github.com/kaissalha/frontend-common/compare/v1.3.1...v1.3.2) (2023-05-31)
+
+
+### Bug Fixes
+
+* fix children type in Content ([bb00a97](https://github.com/kaissalha/frontend-common/commit/bb00a97a3f267ff72e21b455054d0bac09916aac))
+* fix children type in Content ([aae7da3](https://github.com/kaissalha/frontend-common/commit/aae7da3301ec0053225d8d288970f840a09a69c3))
+
 ## [1.3.1](https://github.com/kaissalha/frontend-common/compare/v1.3.0...v1.3.1) (2023-05-31)
 
 
