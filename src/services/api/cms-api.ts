@@ -8,7 +8,7 @@ export interface Category {
 	name: string;
 	slug: string;
 	description: string;
-	content: Content;
+	content: Content[];
 }
 
 /**
