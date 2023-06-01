@@ -1,6 +1,5 @@
 import { AxiosResponse } from "axios";
 import { Content, Locale } from "../../types";
-import { getWithAuth } from "./utils/api-common";
 import { ApiClient } from "./utils/api-client";
 
 export interface Category {
@@ -34,8 +33,7 @@ export const getCategories = async ({
 }): Promise<Category[]> => {
 	const response: AxiosResponse<{
 		docs: Category[];
-	}> = await getWithAuth(
-		ApiClient.getClient(serviceName),
+	}> = await ApiClient.getClient(serviceName).get(
 		`/categories?locale=${locale}`
 	);
 
@@ -51,8 +49,7 @@ export const getCategoryBySlug = async ({
 }): Promise<Category> => {
 	const response: AxiosResponse<{
 		docs: Category[];
-	}> = await getWithAuth(
-		ApiClient.getClient(serviceName),
+	}> = await ApiClient.getClient(serviceName).get(
 		`/categories/slug/${slug}?locale=${locale}`
 	);
 

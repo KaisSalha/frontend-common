@@ -44,8 +44,6 @@
 		"zod": "^3.21.4"
 	},
 	"peerDependencies": {
-		"@aws-amplify/auth": "*",
-		"@aws-amplify/core": "*",
 		"@tanstack/react-query": "^4.0.0",
 		"jotai": "^1.9.2 || ^2.0.0",
 		"react": "^18.0.0"
