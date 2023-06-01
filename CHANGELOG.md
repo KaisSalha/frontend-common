@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.1](https://github.com/kaissalha/frontend-common/compare/v1.4.0...v1.4.1) (2023-06-01)
+
+
+### Bug Fixes
+
+* add missing useProfile hook ([24dff5f](https://github.com/kaissalha/frontend-common/commit/24dff5f0bb385d28217681b05520dad3ec0d4ccd))
+* add missing useProfile hook ([fc48c6f](https://github.com/kaissalha/frontend-common/commit/fc48c6fb03291f09124984e5a6c7fb927687cfb3))
+
 ## [1.4.0](https://github.com/kaissalha/frontend-common/compare/v1.3.3...v1.4.0) (2023-06-01)
 
 
