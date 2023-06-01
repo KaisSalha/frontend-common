@@ -37,6 +37,10 @@ const ApiClientsManager = () => {
 		config = { ...config, ...newConfig };
 	};
 
+	const setHeaders = (newHeaders: RawAxiosRequestHeaders) => {
+		config.headers = { ...config.headers, ...newHeaders };
+	};
+
 	const getEnvironment = (): string => config.env;
 
 	const registerService = (service: RegisterServiceParams) => {
@@ -72,7 +76,13 @@ const ApiClientsManager = () => {
 		return clients.get(key) as AxiosInstance;
 	};
 
-	return { setConfig, getEnvironment, registerService, getClient };
+	return {
+		setConfig,
+		setHeaders,
+		getEnvironment,
+		registerService,
+		getClient,
+	};
 };
 
 export const ApiClient = ApiClientsManager();
