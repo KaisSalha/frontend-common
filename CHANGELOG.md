@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.2](https://github.com/kaissalha/frontend-common/compare/v1.4.1...v1.4.2) (2023-06-01)
+
+
+### Bug Fixes
+
+* **use-profile:** fix service import ([cd381db](https://github.com/kaissalha/frontend-common/commit/cd381db98b26b6a7c95595b85a1771168093bccf))
+* **use-profile:** service import ([666d64d](https://github.com/kaissalha/frontend-common/commit/666d64d067fd28b5e4e52a609d24ed7b2a274ea0))
+
 ## [1.4.1](https://github.com/kaissalha/frontend-common/compare/v1.4.0...v1.4.1) (2023-06-01)
 
 
