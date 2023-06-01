@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://github.com/kaissalha/frontend-common/compare/v1.3.3...v1.4.0) (2023-06-01)
+
+
+### Features
+
+* **profile-api:** add profile api ([f3b40e6](https://github.com/kaissalha/frontend-common/commit/f3b40e6d0960b9468e9b48d9c48e597e46d05cff))
+* **profile-api:** add profile api ([24b424f](https://github.com/kaissalha/frontend-common/commit/24b424fa62896f19a71f812702e47d3120fb69bc))
+
+
+### Bug Fixes
+
+* export profile api ([a153e9c](https://github.com/kaissalha/frontend-common/commit/a153e9cce7419c97fd82a2293f430a36a5fb18c4))
+
 ## [1.3.3](https://github.com/kaissalha/frontend-common/compare/v1.3.2...v1.3.3) (2023-05-31)
 
 
