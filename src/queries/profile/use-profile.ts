@@ -1,10 +1,5 @@
 import { useMutation, useQuery } from "@tanstack/react-query";
-import {
-	Profile,
-	createProfileParams,
-	getProfile,
-	createProfile as createProfileApi,
-} from "services/api/profile-api";
+import { ProfileApi } from "../../services/api";
 
 type Params = {
 	fetchEnabled?: boolean;
@@ -13,9 +8,9 @@ type Params = {
 export const useProfile = (params?: Params) => {
 	const fetchEnabled = params?.fetchEnabled ?? true;
 
-	const { data, error } = useQuery<Profile, Error>(
+	const { data, error } = useQuery<ProfileApi.Profile, Error>(
 		["profile"],
-		() => getProfile(),
+		() => ProfileApi.getProfile(),
 		{
 			enabled: fetchEnabled,
 			staleTime: 1000 * 60 * 10, // 10 minutes
@@ -23,11 +18,16 @@ export const useProfile = (params?: Params) => {
 	);
 
 	const { mutateAsync: createProfile, isLoading: isLoadingCreateProfile } =
-		useMutation(async (createProfileObj: createProfileParams) => {
-			const response = await createProfileApi(createProfileObj);
+		useMutation(
+			async (createProfileObj: ProfileApi.createProfileParams) => {
+				const response = await ProfileApi.createProfile(
+					createProfileObj
+				);
 
-			return response;
-		}, {});
+				return response;
+			},
+			{}
+		);
 
 	return {
 		profile: data,
