@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.3](https://github.com/kaissalha/frontend-common/compare/v1.4.2...v1.4.3) (2023-06-02)
+
+
+### Bug Fixes
+
+* invalidate profile after mutation ([26bcaf8](https://github.com/kaissalha/frontend-common/commit/26bcaf841fdcc647e6e8a88e9242e1670d9a53bd))
+
 ## [1.4.2](https://github.com/kaissalha/frontend-common/compare/v1.4.1...v1.4.2) (2023-06-01)
 
 
