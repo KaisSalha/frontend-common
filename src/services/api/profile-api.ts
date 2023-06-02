@@ -1,8 +1,6 @@
 import { ApiClient } from "./utils/api-client";
 
 export interface createProfileParams {
-	user_id: string;
-	email: string;
 	first_name: string;
 	last_name: string;
 	birth_date: Date;
