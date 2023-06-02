@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.4](https://github.com/kaissalha/frontend-common/compare/v1.4.3...v1.4.4) (2023-06-02)
+
+
+### Bug Fixes
+
+* **profile-api:** fix create profile params type ([943126f](https://github.com/kaissalha/frontend-common/commit/943126fd98060ee4060108d7689679b18bcf3d65))
+* **profile-api:** fix create profile params type ([70a41d1](https://github.com/kaissalha/frontend-common/commit/70a41d1c1059e50b47a772ced85fbe735779cfc4))
+
 ## [1.4.3](https://github.com/kaissalha/frontend-common/compare/v1.4.2...v1.4.3) (2023-06-02)
 
 
