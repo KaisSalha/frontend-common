@@ -1,4 +1,5 @@
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { QUERY_IDS } from "queries/utils/query-ids";
 import { ProfileApi } from "../../services/api";
 
 type Params = {
@@ -6,10 +7,12 @@ type Params = {
 };
 
 export const useProfile = (params?: Params) => {
+	const queryClient = useQueryClient();
+
 	const fetchEnabled = params?.fetchEnabled ?? true;
 
 	const { data, error } = useQuery<ProfileApi.Profile, Error>(
-		["profile"],
+		[QUERY_IDS.profile],
 		() => ProfileApi.getProfile(),
 		{
 			enabled: fetchEnabled,
@@ -18,16 +21,22 @@ export const useProfile = (params?: Params) => {
 	);
 
 	const { mutateAsync: createProfile, isLoading: isLoadingCreateProfile } =
-		useMutation(
-			async (createProfileObj: ProfileApi.createProfileParams) => {
+		useMutation({
+			mutationFn: async (
+				createProfileObj: ProfileApi.createProfileParams
+			) => {
 				const response = await ProfileApi.createProfile(
 					createProfileObj
 				);
 
 				return response;
 			},
-			{}
-		);
+			onSuccess: () => {
+				queryClient.invalidateQueries({
+					queryKey: [QUERY_IDS.profile],
+				});
+			},
+		});
 
 	return {
 		profile: data,
