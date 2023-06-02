@@ -1,5 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { QUERY_IDS } from "queries/utils/query-ids";
+import { QUERY_IDS } from "../utils/query-ids";
 import { ProfileApi } from "../../services/api";
 
 type Params = {
