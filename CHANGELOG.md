@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.5](https://github.com/kaissalha/frontend-common/compare/v1.4.4...v1.4.5) (2023-06-02)
+
+
+### Bug Fixes
+
+* **use-profile:** import path for import ([5915bdf](https://github.com/kaissalha/frontend-common/commit/5915bdff303ee3f80051f838f840135773f620ea))
+* **use-profile:** import path for import ([7795228](https://github.com/kaissalha/frontend-common/commit/7795228268ca0b00f442c7ff043b76e263c3f476))
+
 ## [1.4.4](https://github.com/kaissalha/frontend-common/compare/v1.4.3...v1.4.4) (2023-06-02)
 
 
