@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.1](https://github.com/kaissalha/frontend-common/compare/v1.5.0...v1.5.1) (2023-06-25)
+
+
+### Bug Fixes
+
+* fix missing useAreas export ([50fe36f](https://github.com/kaissalha/frontend-common/commit/50fe36fd5b32ced3fd85cf617920f77919234c11))
+* missing useAreas export ([a353999](https://github.com/kaissalha/frontend-common/commit/a35399934c37574f2b8f495a08450c727401b43c))
+
 ## [1.5.0](https://github.com/kaissalha/frontend-common/compare/v1.4.5...v1.5.0) (2023-06-25)
 
 
