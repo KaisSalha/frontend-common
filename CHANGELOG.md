@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.0](https://github.com/kaissalha/frontend-common/compare/v1.4.5...v1.5.0) (2023-06-25)
+
+
+### Features
+
+* add the location api and the useAreas hook ([8e956f6](https://github.com/kaissalha/frontend-common/commit/8e956f64d47aac956798b05d0f8d7f187fa0ae01))
+* add the location api and the useAreas hook ([ab57355](https://github.com/kaissalha/frontend-common/commit/ab5735518213b88f382b13eb2b42d97136ab508e))
+
 ## [1.4.5](https://github.com/kaissalha/frontend-common/compare/v1.4.4...v1.4.5) (2023-06-02)
 
 
