@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.5.2](https://github.com/kaissalha/frontend-common/compare/v1.5.1...v1.5.2) (2023-06-25)
+
+
+### Bug Fixes
+
+* areas api and query key ([400b161](https://github.com/kaissalha/frontend-common/commit/400b1614569a72cdee4368ab65486280e6964624))
+* fix areas api and query key ([1c8190d](https://github.com/kaissalha/frontend-common/commit/1c8190d22c79eb1d72869e973938d420fa62050e))
+* **location-api:** fix path ([92bb459](https://github.com/kaissalha/frontend-common/commit/92bb459c2e6db214d98eeedd888a77a4a9fdfe98))
+
 ## [1.5.1](https://github.com/kaissalha/frontend-common/compare/v1.5.0...v1.5.1) (2023-06-25)
 
 
