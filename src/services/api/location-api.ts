@@ -20,13 +20,13 @@ ApiClient.registerService({
 	name: serviceName,
 	timeout: 10000,
 	environments: {
-		staging: "http://localhost:3011",
-		prod: "http://localhost:3011",
+		staging: "http://localhost:3011/dev",
+		prod: "http://localhost:3011/dev",
 	},
 });
 
 export const getAreas = async (): Promise<getPolygonsResult> => {
-	const response = await ApiClient.getClient(serviceName).get(`/`);
+	const response = await ApiClient.getClient(serviceName).get(`/hello`);
 
 	return response.data;
 };
