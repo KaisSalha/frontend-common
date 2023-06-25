@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.3](https://github.com/kaissalha/frontend-common/compare/v1.5.2...v1.5.3) (2023-06-25)
+
+
+### Bug Fixes
+
+* change endpoint from get to post ([3f936d3](https://github.com/kaissalha/frontend-common/commit/3f936d3f25d04fc1f47c73ec6d5fac7c7241483f))
+* change endpoint from get to post ([e755e01](https://github.com/kaissalha/frontend-common/commit/e755e016a1d4f0ceee8d6ed1b110a00cd7538f91))
+
 ## [1.5.2](https://github.com/kaissalha/frontend-common/compare/v1.5.1...v1.5.2) (2023-06-25)
 
 
