@@ -26,7 +26,9 @@ ApiClient.registerService({
 });
 
 export const getAreas = async (): Promise<getPolygonsResult> => {
-	const response = await ApiClient.getClient(serviceName).get(`/hello`);
+	const response = await ApiClient.getClient(serviceName).post(`/hello`, {
+		name: "Kais",
+	});
 
 	return response.data;
 };
