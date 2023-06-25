@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.4](https://github.com/kaissalha/frontend-common/compare/v1.5.3...v1.5.4) (2023-06-25)
+
+
+### Bug Fixes
+
+* **location-api:** the type ([1c9309f](https://github.com/kaissalha/frontend-common/commit/1c9309fabe65b27821e6f7f4f168be191b252fe5))
+* **location-api:** the type ([b149156](https://github.com/kaissalha/frontend-common/commit/b149156466e2dd9dc730314811be540a6116ecfd))
+
 ## [1.5.3](https://github.com/kaissalha/frontend-common/compare/v1.5.2...v1.5.3) (2023-06-25)
 
 
