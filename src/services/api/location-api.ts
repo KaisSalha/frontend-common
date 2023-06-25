@@ -7,7 +7,7 @@ export interface getPolygonsResult {
 		geo_name: string;
 		land_area: number;
 		geom: string;
-	};
+	}[];
 }
 
 /**
