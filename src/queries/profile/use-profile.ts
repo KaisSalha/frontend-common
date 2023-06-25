@@ -11,7 +11,7 @@ export const useProfile = (params?: Params) => {
 
 	const fetchEnabled = params?.fetchEnabled ?? true;
 
-	const { data, error } = useQuery<ProfileApi.Profile, Error>(
+	const { data, error } = useQuery(
 		[QUERY_IDS.profile],
 		() => ProfileApi.getProfile(),
 		{
