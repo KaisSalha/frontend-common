@@ -40,6 +40,7 @@
 		}
 	},
 	"dependencies": {
+		"@types/geojson": "^7946.0.10",
 		"axios": "^1.4.0",
 		"zod": "^3.21.4"
 	},

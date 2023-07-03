@@ -1,12 +1,12 @@
+import type { MultiPolygon } from "geojson";
 import { ApiClient } from "./utils/api-client";
 
 export interface getPolygonsResult {
-	message: string;
 	polygons: {
 		id: number;
 		geo_name: string;
 		land_area: number;
-		geom: string;
+		geom: MultiPolygon;
 	}[];
 }
 
@@ -25,10 +25,44 @@ ApiClient.registerService({
 	},
 });
 
-export const getAreas = async (): Promise<getPolygonsResult> => {
-	const response = await ApiClient.getClient(serviceName).post(`/hello`, {
-		name: "Kais",
-	});
+export type GeoLevel = "tract" | "division" | "subdivision";
+
+export interface getGeoByPointsParams {
+	ne_lat: number;
+	ne_lng: number;
+	sw_lat: number;
+	sw_lng: number;
+	geo_level: GeoLevel;
+}
+
+export const getGeoByPoints = async ({
+	ne_lat,
+	ne_lng,
+	sw_lat,
+	sw_lng,
+	geo_level,
+}: getGeoByPointsParams): Promise<getPolygonsResult> => {
+	const response = await ApiClient.getClient(serviceName).get(
+		`/getGeoByPoints?ne_lat=${ne_lat}&ne_lng=${ne_lng}&sw_lat=${sw_lat}&sw_lng=${sw_lng}&geo_level=${geo_level}`
+	);
+
+	return response.data;
+};
+
+export interface getGeoByParentIdParams {
+	geo_level: GeoLevel;
+	parent_level: Omit<GeoLevel, "tract">;
+	id: string;
+}
+
+export const getGeosByParentId = async ({
+	id,
+	geo_level,
+	parent_level,
+}: getGeoByParentIdParams): Promise<getPolygonsResult> => {
+	const response = await ApiClient.getClient(serviceName).get(
+		`/getGeosByParentId?id=${id}&geo_level=${geo_level}&parent_level=${parent_level}`
+	);
 
 	return response.data;
 };

@@ -16,6 +16,8 @@ module.exports = {
 		browser: true,
 	},
 	rules: {
+		camelcase: 0,
+		"@typescript-eslint/camelcase": 0,
 		"jsx-a11y/click-events-have-key-events": 0,
 		"jsx-a11y/anchor-is-valid": 0,
 		"react/no-unused-prop-types": 0,
