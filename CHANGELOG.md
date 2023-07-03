@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.0](https://github.com/kaissalha/frontend-common/compare/v1.6.1...v1.7.0) (2023-07-03)
+
+
+### Features
+
+* add padding to bounds + keepPreviousData ([816d85d](https://github.com/kaissalha/frontend-common/commit/816d85d5d5b0bd26b613f884ff1daa1d57c07dba))
+* add padding to bounds + keepPreviousData ([9959315](https://github.com/kaissalha/frontend-common/commit/99593157398dbde3da347f96e7b9eb214878d018))
+
 ## [1.6.1](https://github.com/kaissalha/frontend-common/compare/v1.6.0...v1.6.1) (2023-07-03)
 
 
