@@ -7,6 +7,10 @@ export const useGetGeoByParentId = ({
 	geo_level,
 	parent_level,
 }: LocationApi.getGeoByParentIdParams) =>
-	useQuery([QUERY_IDS.geos, id, geo_level, parent_level], () =>
-		LocationApi.getGeosByParentId({ id, geo_level, parent_level })
+	useQuery(
+		[QUERY_IDS.geos, id, geo_level, parent_level],
+		() => LocationApi.getGeosByParentId({ id, geo_level, parent_level }),
+		{
+			keepPreviousData: true,
+		}
 	);
