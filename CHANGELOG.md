@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.0](https://github.com/kaissalha/frontend-common/compare/v1.5.4...v1.6.0) (2023-07-03)
+
+
+### Features
+
+* use new location api endpoints ([9abe62a](https://github.com/kaissalha/frontend-common/commit/9abe62aec1e4dca19f299ae71799e99cb06977b9))
+* use new location api endpoints ([16e4ec7](https://github.com/kaissalha/frontend-common/commit/16e4ec70a702ce4d665a22d730f1a48c09022492))
+
 ## [1.5.4](https://github.com/kaissalha/frontend-common/compare/v1.5.3...v1.5.4) (2023-06-25)
 
 
