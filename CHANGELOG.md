@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.1](https://github.com/kaissalha/frontend-common/compare/v1.6.0...v1.6.1) (2023-07-03)
+
+
+### Bug Fixes
+
+* change query key on input change ([e4149ac](https://github.com/kaissalha/frontend-common/commit/e4149acd402ec65fd5456290fcb335c01e106068))
+* change query key on input change ([050c7e3](https://github.com/kaissalha/frontend-common/commit/050c7e37c615f686ce95793f5b12f94c6d19df43))
+
 ## [1.6.0](https://github.com/kaissalha/frontend-common/compare/v1.5.4...v1.6.0) (2023-07-03)
 
 
