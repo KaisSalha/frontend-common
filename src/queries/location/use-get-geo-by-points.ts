@@ -9,7 +9,7 @@ export const useGetGeoByPoints = ({
 	sw_lng,
 	geo_level,
 }: LocationApi.getGeoByPointsParams) =>
-	useQuery([QUERY_IDS.areas], () =>
+	useQuery([QUERY_IDS.geos, ne_lat, ne_lng, sw_lat, sw_lng, geo_level], () =>
 		LocationApi.getGeoByPoints({
 			ne_lat,
 			ne_lng,
