@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1](https://github.com/kaissalha/frontend-common/compare/v1.8.0...v1.8.1) (2023-07-06)
+
+
+### Bug Fixes
+
+* use-get-geo-by-parent-ids response should be similar to other hooks ([6687424](https://github.com/kaissalha/frontend-common/commit/668742400400752404f21ced53efc507e02852d2))
+
 ## [1.8.0](https://github.com/kaissalha/frontend-common/compare/v1.7.0...v1.8.0) (2023-07-06)
 
 
