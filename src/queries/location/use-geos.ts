@@ -4,6 +4,7 @@ import { useGetGeoByPoints } from "./use-get-geo-by-points";
 
 interface useGeosParams extends LocationApi.getGeoByPointsParams {
 	zoom: number;
+	enabled?: boolean;
 }
 
 export const useGeos = ({
@@ -12,6 +13,7 @@ export const useGeos = ({
 	sw_lat,
 	sw_lng,
 	zoom,
+	enabled = true,
 }: useGeosParams) => {
 	const divisionsResponse = useGetGeoByPoints({
 		ne_lat,
@@ -27,15 +29,17 @@ export const useGeos = ({
 			[],
 		geo_level: "subdivision",
 		parent_level: "division",
+		enabled: zoom > 8 && enabled,
 	});
 
 	const tractsResponse = useGetGeoByParentIds({
 		ids:
-			divisionsResponse?.data?.polygons.map((division) => division.id) ??
-			[],
+			subdivisionsResponse?.data?.polygons
+				?.filter((subdivision) => !!subdivision?.id)
+				.map((subdivision) => subdivision!.id) ?? [],
 		geo_level: "tract",
-		parent_level: "division",
-		enabled: zoom > 8,
+		parent_level: "subdivision",
+		enabled: zoom > 10 && enabled,
 	});
 
 	return {
