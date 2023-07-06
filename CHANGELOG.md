@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.0](https://github.com/kaissalha/frontend-common/compare/v1.7.0...v1.8.0) (2023-07-06)
+
+
+### Features
+
+* create useGeos hook to fetch everything in 1 hook ([e01ec9c](https://github.com/kaissalha/frontend-common/commit/e01ec9ce37746acab54cd1b6596e92b266fe59fd))
+* create useGeos hook to fetch everything in 1 hook ([3c9c4ef](https://github.com/kaissalha/frontend-common/commit/3c9c4ef05f556d8ee5a8a229336b2418d4e4d46f))
+
 ## [1.7.0](https://github.com/kaissalha/frontend-common/compare/v1.6.1...v1.7.0) (2023-07-03)
 
 
