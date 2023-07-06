@@ -3,7 +3,7 @@ import { ApiClient } from "./utils/api-client";
 
 export interface getPolygonsResult {
 	polygons: {
-		id: number;
+		id: string;
 		geo_name: string;
 		land_area: number;
 		geom: MultiPolygon;
