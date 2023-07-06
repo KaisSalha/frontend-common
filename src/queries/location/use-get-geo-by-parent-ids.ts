@@ -34,9 +34,9 @@ export const useGetGeoByParentIds = ({
 	});
 
 	return {
-		data: responses
-			?.map((response) => response.data)
-			.filter((data) => !!data),
+		data: {
+			polygons: responses?.map((response) => response?.data?.polygons),
+		},
 		errors: responses
 			?.map((response) => response.error)
 			.filter((error) => !!error),
