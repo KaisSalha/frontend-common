@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.3](https://github.com/kaissalha/frontend-common/compare/v1.8.2...v1.8.3) (2023-07-06)
+
+
+### Bug Fixes
+
+* remove undefined ([a2b6fbe](https://github.com/kaissalha/frontend-common/commit/a2b6fbe6bfbed8f44502da3798eae1db77ae832b))
+* remove undefined ([66cf38f](https://github.com/kaissalha/frontend-common/commit/66cf38f9c8234c753d3b9b11ba8a0d00aa887168))
+
 ## [1.8.2](https://github.com/kaissalha/frontend-common/compare/v1.8.1...v1.8.2) (2023-07-06)
 
 
