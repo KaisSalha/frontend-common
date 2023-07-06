@@ -46,7 +46,7 @@ export const useGeos = ({
 		geo_level: "tract",
 		parent_level: "division",
 		enabled:
-			zoom > 12 &&
+			zoom > 11 &&
 			enabled &&
 			!!divisionsResponse?.data?.polygons?.length &&
 			!divisionsResponse.isLoading &&
