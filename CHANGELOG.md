@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.4](https://github.com/kaissalha/frontend-common/compare/v1.8.3...v1.8.4) (2023-07-06)
+
+
+### Bug Fixes
+
+* **use-geos:** allow disabling queries ([4b950e4](https://github.com/kaissalha/frontend-common/commit/4b950e4a5e35c881690c5e5b4415984665193832))
+* **use-geos:** allow disabling queries ([629647f](https://github.com/kaissalha/frontend-common/commit/629647f3db48419e0bd5f97eca9798ff1506c0fa))
+
 ## [1.8.3](https://github.com/kaissalha/frontend-common/compare/v1.8.2...v1.8.3) (2023-07-06)
 
 
