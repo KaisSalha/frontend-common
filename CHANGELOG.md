@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.2](https://github.com/kaissalha/frontend-common/compare/v1.8.1...v1.8.2) (2023-07-06)
+
+
+### Bug Fixes
+
+* flatten the polygons array ([7ed9084](https://github.com/kaissalha/frontend-common/commit/7ed90840fb52968ac787896cd0ccfa20f15059b2))
+* flatten the polygons array ([d72ce87](https://github.com/kaissalha/frontend-common/commit/d72ce87bb3b67d2f3f44dd196b448e365094bfba))
+
 ## [1.8.1](https://github.com/kaissalha/frontend-common/compare/v1.8.0...v1.8.1) (2023-07-06)
 
 
