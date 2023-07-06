@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.8](https://github.com/kaissalha/frontend-common/compare/v1.8.7...v1.8.8) (2023-07-06)
+
+
+### Bug Fixes
+
+* stop overfetching ([ad53867](https://github.com/kaissalha/frontend-common/commit/ad538678f9994221248b6ea60567ae0847f36fad))
+* stop overfetching ([0c1619c](https://github.com/kaissalha/frontend-common/commit/0c1619c254739ae05f22cfb6bfcb4b0d96471e65))
+
 ## [1.8.7](https://github.com/kaissalha/frontend-common/compare/v1.8.6...v1.8.7) (2023-07-06)
 
 
