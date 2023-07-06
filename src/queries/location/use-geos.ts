@@ -21,6 +21,7 @@ export const useGeos = ({
 		sw_lat,
 		sw_lng,
 		geo_level: "division",
+		enabled,
 	});
 
 	const subdivisionsResponse = useGetGeoByParentIds({
