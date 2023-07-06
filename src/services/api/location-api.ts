@@ -33,6 +33,7 @@ export interface getGeoByPointsParams {
 	sw_lat: number;
 	sw_lng: number;
 	geo_level: GeoLevel;
+	signal?: AbortSignal;
 }
 
 export const getGeoByPoints = async ({
@@ -41,9 +42,11 @@ export const getGeoByPoints = async ({
 	sw_lat,
 	sw_lng,
 	geo_level,
+	signal,
 }: getGeoByPointsParams): Promise<getPolygonsResult> => {
 	const response = await ApiClient.getClient(serviceName).get(
-		`/getGeoByPoints?ne_lat=${ne_lat}&ne_lng=${ne_lng}&sw_lat=${sw_lat}&sw_lng=${sw_lng}&geo_level=${geo_level}`
+		`/getGeoByPoints?ne_lat=${ne_lat}&ne_lng=${ne_lng}&sw_lat=${sw_lat}&sw_lng=${sw_lng}&geo_level=${geo_level}`,
+		{ signal }
 	);
 
 	return response.data;
@@ -53,15 +56,18 @@ export interface getGeoByParentIdParams {
 	geo_level: GeoLevel;
 	parent_level: Omit<GeoLevel, "tract">;
 	id: string;
+	signal?: AbortSignal;
 }
 
 export const getGeosByParentId = async ({
 	id,
 	geo_level,
 	parent_level,
+	signal,
 }: getGeoByParentIdParams): Promise<getPolygonsResult> => {
 	const response = await ApiClient.getClient(serviceName).get(
-		`/getGeosByParentId?id=${id}&geo_level=${geo_level}&parent_level=${parent_level}`
+		`/getGeosByParentId?id=${id}&geo_level=${geo_level}&parent_level=${parent_level}`,
+		{ signal }
 	);
 
 	return response.data;
