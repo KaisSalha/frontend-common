@@ -29,7 +29,11 @@ export const useGeos = ({
 			[],
 		geo_level: "subdivision",
 		parent_level: "division",
-		enabled: zoom > 8 && enabled,
+		enabled:
+			zoom > 8 &&
+			enabled &&
+			!!divisionsResponse?.data?.polygons?.length &&
+			!divisionsResponse.isLoading,
 	});
 
 	const tractsResponse = useGetGeoByParentIds({
@@ -39,12 +43,25 @@ export const useGeos = ({
 				.map((subdivision) => subdivision!.id) ?? [],
 		geo_level: "tract",
 		parent_level: "subdivision",
-		enabled: zoom > 10 && enabled,
+		enabled:
+			zoom > 10 &&
+			enabled &&
+			!!subdivisionsResponse?.data?.polygons?.length &&
+			!subdivisionsResponse.isLoading &&
+			!divisionsResponse.isLoading,
 	});
 
 	return {
 		divisionsResponse,
 		subdivisionsResponse,
 		tractsResponse,
+		isLoading:
+			divisionsResponse.isLoading ||
+			subdivisionsResponse.isLoading ||
+			tractsResponse.isLoading,
+		isFetching:
+			divisionsResponse.isFetching ||
+			subdivisionsResponse.isFetching ||
+			tractsResponse.isFetching,
 	};
 };
