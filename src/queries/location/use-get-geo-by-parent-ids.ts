@@ -27,6 +27,8 @@ export const useGetGeoByParentIds = ({
 			keepPreviousData: true,
 			staleTime: Infinity,
 			cacheTime: Infinity,
+			retry: 2,
+			retryDelay: 1000,
 			meta: {
 				persist: true,
 			},

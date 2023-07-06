@@ -3,13 +3,18 @@ import { getPaddedBounds } from "./utils/get-padded-bounds";
 import { LocationApi } from "../../services/api";
 import { QUERY_IDS } from "../utils/query-ids";
 
+interface useGetGeoByPointsParams extends LocationApi.getGeoByPointsParams {
+	enabled?: boolean;
+}
+
 export const useGetGeoByPoints = ({
 	ne_lat,
 	ne_lng,
 	sw_lat,
 	sw_lng,
 	geo_level,
-}: LocationApi.getGeoByPointsParams) => {
+	enabled = true,
+}: useGetGeoByPointsParams) => {
 	const paddedBounds = getPaddedBounds(
 		{
 			latitude: ne_lat,
@@ -33,6 +38,7 @@ export const useGetGeoByPoints = ({
 			}),
 		{
 			keepPreviousData: true,
+			enabled,
 		}
 	);
 };
