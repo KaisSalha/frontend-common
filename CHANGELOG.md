@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.7](https://github.com/kaissalha/frontend-common/compare/v1.8.6...v1.8.7) (2023-07-06)
+
+
+### Bug Fixes
+
+* dont fetch unnecessary tiles ([3602329](https://github.com/kaissalha/frontend-common/commit/3602329a045ea7e7d054e10bf73a4d0ff7de51dc))
+* dont fetch unnecessary tiles ([3d0edc0](https://github.com/kaissalha/frontend-common/commit/3d0edc084787f89f29d98942275c3e3b7547a694))
+
 ## [1.8.6](https://github.com/kaissalha/frontend-common/compare/v1.8.5...v1.8.6) (2023-07-06)
 
 
