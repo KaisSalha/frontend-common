@@ -3,7 +3,7 @@ import { LocationApi } from "../../services/api";
 import { QUERY_IDS } from "../utils/query-ids";
 
 export interface useGetGeoByParentIdsParams
-	extends Omit<LocationApi.getGeoByParentIdParams, "id"> {
+	extends Omit<LocationApi.getGeoByParentIdParams, "id" | "signal"> {
 	ids: string[];
 	enabled?: boolean;
 }
@@ -17,11 +17,12 @@ export const useGetGeoByParentIds = ({
 	const responses = useQueries({
 		queries: ids.map((id) => ({
 			queryKey: [QUERY_IDS.geos, id, geo_level, parent_level],
-			queryFn: () =>
+			queryFn: ({ signal }: { signal?: any }) =>
 				LocationApi.getGeosByParentId({
 					id,
 					geo_level,
 					parent_level,
+					signal,
 				}),
 			enabled,
 			keepPreviousData: true,

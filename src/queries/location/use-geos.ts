@@ -35,7 +35,8 @@ export const useGeos = ({
 			zoom < 12 &&
 			enabled &&
 			!!divisionsResponse?.data?.polygons?.length &&
-			!divisionsResponse.isLoading,
+			!divisionsResponse.isLoading &&
+			!divisionsResponse.isPreviousData,
 	});
 
 	const tractsResponse = useGetGeoByParentIds({
@@ -48,7 +49,8 @@ export const useGeos = ({
 			zoom > 12 &&
 			enabled &&
 			!!divisionsResponse?.data?.polygons?.length &&
-			!divisionsResponse.isLoading,
+			!divisionsResponse.isLoading &&
+			!divisionsResponse.isPreviousData,
 	});
 
 	return {

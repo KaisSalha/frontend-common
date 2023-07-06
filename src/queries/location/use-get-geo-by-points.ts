@@ -3,7 +3,8 @@ import { getPaddedBounds } from "./utils/get-padded-bounds";
 import { LocationApi } from "../../services/api";
 import { QUERY_IDS } from "../utils/query-ids";
 
-interface useGetGeoByPointsParams extends LocationApi.getGeoByPointsParams {
+interface useGetGeoByPointsParams
+	extends Omit<LocationApi.getGeoByPointsParams, "signal"> {
 	enabled?: boolean;
 }
 
@@ -26,9 +27,9 @@ export const useGetGeoByPoints = ({
 		}
 	);
 
-	return useQuery(
-		[QUERY_IDS.geos, ne_lat, ne_lng, sw_lat, sw_lng, geo_level],
-		() =>
+	return useQuery({
+		queryKey: [QUERY_IDS.geos, ne_lat, ne_lng, sw_lat, sw_lng, geo_level],
+		queryFn: () =>
 			LocationApi.getGeoByPoints({
 				ne_lat: paddedBounds.paddedNE.latitude,
 				ne_lng: paddedBounds.paddedNE.longitude,
@@ -36,9 +37,9 @@ export const useGetGeoByPoints = ({
 				sw_lng: paddedBounds.paddedSW.longitude,
 				geo_level,
 			}),
-		{
-			keepPreviousData: true,
-			enabled,
-		}
-	);
+		keepPreviousData: true,
+		enabled,
+		retry: 2,
+		retryDelay: 1000,
+	});
 };

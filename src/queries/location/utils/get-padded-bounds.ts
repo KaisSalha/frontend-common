@@ -101,7 +101,7 @@ export const calculateOutboundCoordinate = (
 };
 
 // Util function to get padded SW and NE coordinates
-export const getPaddedBounds = (NE: LatLng, SW: LatLng, factor = 0.25) => {
+export const getPaddedBounds = (NE: LatLng, SW: LatLng, factor = 0) => {
 	const distance = calculateHaversineDistance(NE, SW);
 	const bearing = calculateBearingSWtoNE(SW, NE); // Going from SW -> NE
 
