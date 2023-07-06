@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.6](https://github.com/kaissalha/frontend-common/compare/v1.8.5...v1.8.6) (2023-07-06)
+
+
+### Bug Fixes
+
+* disable division fetching while moving ([57f11da](https://github.com/kaissalha/frontend-common/commit/57f11dacf5a7ca966a2b43df8bf9b6de3452cf13))
+* disable division fetching while moving ([0e747a9](https://github.com/kaissalha/frontend-common/commit/0e747a97b074892fa020ae69f5809d2159a9469d))
+
 ## [1.8.5](https://github.com/kaissalha/frontend-common/compare/v1.8.4...v1.8.5) (2023-07-06)
 
 
