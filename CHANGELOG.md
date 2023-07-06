@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.5](https://github.com/kaissalha/frontend-common/compare/v1.8.4...v1.8.5) (2023-07-06)
+
+
+### Bug Fixes
+
+* don't load children when loading parent ([8ca78cd](https://github.com/kaissalha/frontend-common/commit/8ca78cdac18fe21e3f5facbe627f5fc69c4c9ae1))
+* don't load children when loading parent ([8299f97](https://github.com/kaissalha/frontend-common/commit/8299f97cb4f5c94fdb01c3517a85de1d7d2ff5e8))
+
 ## [1.8.4](https://github.com/kaissalha/frontend-common/compare/v1.8.3...v1.8.4) (2023-07-06)
 
 
