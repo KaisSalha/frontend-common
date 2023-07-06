@@ -23,7 +23,7 @@ export const useGetGeoByParentIds = ({
 					geo_level,
 					parent_level,
 				}),
-			enabled: enabled && id.length > 0,
+			enabled,
 			keepPreviousData: true,
 			staleTime: Infinity,
 			cacheTime: Infinity,
