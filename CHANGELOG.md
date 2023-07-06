@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.9](https://github.com/kaissalha/frontend-common/compare/v1.8.8...v1.8.9) (2023-07-06)
+
+
+### Bug Fixes
+
+* **use-geos:** zoom level for tract ([9f63f51](https://github.com/kaissalha/frontend-common/commit/9f63f51b081b68f7f72cebaf6c58eeeac32629e0))
+* **use-geos:** zoom level for tract ([8059892](https://github.com/kaissalha/frontend-common/commit/80598923b3ad12aa6398adf6ef6573c94cbf500b))
+
 ## [1.8.8](https://github.com/kaissalha/frontend-common/compare/v1.8.7...v1.8.8) (2023-07-06)
 
 
