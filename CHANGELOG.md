@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.10.0](https://github.com/kaissalha/frontend-common/compare/v1.9.0...v1.10.0) (2023-07-07)
+
+
+### Features
+
+* new hook to optimize fetching tract and subdivision ([8f3832a](https://github.com/kaissalha/frontend-common/commit/8f3832a36cad246a880dd1ce5a6fc61ab7e09435))
+* new hook to optimize fetching tract and subdivision ([52d0cf1](https://github.com/kaissalha/frontend-common/commit/52d0cf155b1eafda921710c058805511c4bfb442))
+
 ## [1.9.0](https://github.com/kaissalha/frontend-common/compare/v1.8.10...v1.9.0) (2023-07-07)
 
 
