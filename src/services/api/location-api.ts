@@ -33,6 +33,8 @@ export interface getGeoByPointsParams {
 	sw_lat: number;
 	sw_lng: number;
 	geo_level: GeoLevel;
+	parent_level?: GeoLevel;
+	ids?: string[];
 	signal?: AbortSignal;
 }
 
@@ -42,10 +44,16 @@ export const getGeoByPoints = async ({
 	sw_lat,
 	sw_lng,
 	geo_level,
+	parent_level,
+	ids,
 	signal,
 }: getGeoByPointsParams): Promise<getPolygonsResult> => {
 	const response = await ApiClient.getClient(serviceName).get(
-		`/getGeoByPoints?ne_lat=${ne_lat}&ne_lng=${ne_lng}&sw_lat=${sw_lat}&sw_lng=${sw_lng}&geo_level=${geo_level}`,
+		`/getGeoByPoints?ne_lat=${ne_lat}&ne_lng=${ne_lng}&sw_lat=${sw_lat}&sw_lng=${sw_lng}&geo_level=${geo_level}${
+			ids && parent_level
+				? `&ids=${ids.join(",")}&parent_level=${parent_level}`
+				: "&use_division=1"
+		}`,
 		{ signal }
 	);
 

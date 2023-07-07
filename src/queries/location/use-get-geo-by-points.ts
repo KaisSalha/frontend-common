@@ -13,6 +13,8 @@ export const useGetGeoByPoints = ({
 	sw_lat,
 	sw_lng,
 	geo_level,
+	parent_level,
+	ids,
 	enabled = true,
 }: useGetGeoByPointsParams) =>
 	useQuery({
@@ -24,6 +26,8 @@ export const useGetGeoByPoints = ({
 				sw_lat,
 				sw_lng,
 				geo_level,
+				parent_level,
+				ids,
 				signal,
 			}),
 		keepPreviousData: true,
