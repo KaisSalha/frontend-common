@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.10.3](https://github.com/kaissalha/frontend-common/compare/v1.10.2...v1.10.3) (2023-07-07)
+
+
+### Bug Fixes
+
+* dont fetch subdivision and tract while fetching division ([f95825b](https://github.com/kaissalha/frontend-common/commit/f95825bcade24df5c2d2ac7c57c0246d1f878905))
+* dont fetch subdivision and tract while fetching division ([c1b105a](https://github.com/kaissalha/frontend-common/commit/c1b105a62760cc81e20e852f0d2cbe29fe17d0ca))
+
 ## [1.10.2](https://github.com/kaissalha/frontend-common/compare/v1.10.1...v1.10.2) (2023-07-07)
 
 
