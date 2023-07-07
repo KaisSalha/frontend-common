@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.9.0](https://github.com/kaissalha/frontend-common/compare/v1.8.10...v1.9.0) (2023-07-07)
+
+
+### Features
+
+* add parent support to get geo by points ([714be6a](https://github.com/kaissalha/frontend-common/commit/714be6ae0d752c99835fec75939bfd92e0ac85bf))
+* get geo by points improvements [#37](https://github.com/kaissalha/frontend-common/issues/37) ([9aaa5f7](https://github.com/kaissalha/frontend-common/commit/9aaa5f7bb83c6ff0257a8efe9f53145822b1b28a))
+
+
+### Bug Fixes
+
+* **use-get-geo-by-points:** fix query key ([99949f9](https://github.com/kaissalha/frontend-common/commit/99949f960e6e581c35b4b48e13416b71b93ae08e))
+
 ## [1.8.10](https://github.com/kaissalha/frontend-common/compare/v1.8.9...v1.8.10) (2023-07-07)
 
 
