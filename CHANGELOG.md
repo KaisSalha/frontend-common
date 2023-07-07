@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.10.1](https://github.com/kaissalha/frontend-common/compare/v1.10.0...v1.10.1) (2023-07-07)
+
+
+### Bug Fixes
+
+* zoom bug ([6adb5cd](https://github.com/kaissalha/frontend-common/commit/6adb5cdfae0e99332e28f6c943e7f99662a530a6))
+* zoom bug ([86c7a5f](https://github.com/kaissalha/frontend-common/commit/86c7a5fa5a1ee1153db2f29c501fb8b1eb758bb5))
+
 ## [1.10.0](https://github.com/kaissalha/frontend-common/compare/v1.9.0...v1.10.0) (2023-07-07)
 
 
