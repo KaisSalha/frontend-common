@@ -5,6 +5,7 @@ import { QUERY_IDS } from "../utils/query-ids";
 interface useGetGeoByPointsParams
 	extends Omit<LocationApi.getGeoByPointsParams, "signal"> {
 	enabled?: boolean;
+	keepPreviousData?: boolean;
 }
 
 export const useGetGeoByPoints = ({
@@ -16,6 +17,7 @@ export const useGetGeoByPoints = ({
 	parent_level,
 	ids,
 	enabled = true,
+	keepPreviousData = true,
 }: useGetGeoByPointsParams) =>
 	useQuery({
 		queryKey: [
@@ -39,7 +41,7 @@ export const useGetGeoByPoints = ({
 				ids,
 				signal,
 			}),
-		keepPreviousData: true,
+		keepPreviousData,
 		enabled,
 		retry: 2,
 		retryDelay: 1000,
