@@ -13,10 +13,21 @@ export const useGetGeoByPoints = ({
 	sw_lat,
 	sw_lng,
 	geo_level,
+	parent_level,
+	ids,
 	enabled = true,
 }: useGetGeoByPointsParams) =>
 	useQuery({
-		queryKey: [QUERY_IDS.geos, ne_lat, ne_lng, sw_lat, sw_lng, geo_level],
+		queryKey: [
+			QUERY_IDS.geos,
+			ne_lat,
+			ne_lng,
+			sw_lat,
+			sw_lng,
+			geo_level,
+			parent_level,
+			ids,
+		],
 		queryFn: ({ signal }: { signal?: any }) =>
 			LocationApi.getGeoByPoints({
 				ne_lat,
@@ -24,6 +35,8 @@ export const useGetGeoByPoints = ({
 				sw_lat,
 				sw_lng,
 				geo_level,
+				parent_level,
+				ids,
 				signal,
 			}),
 		keepPreviousData: true,
