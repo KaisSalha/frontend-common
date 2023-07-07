@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.10.2](https://github.com/kaissalha/frontend-common/compare/v1.10.1...v1.10.2) (2023-07-07)
+
+
+### Bug Fixes
+
+* dont load tracts for old divisionresponse ([40a766d](https://github.com/kaissalha/frontend-common/commit/40a766dee9e393ee6549015687acefb59160bfa9))
+* remove old query ([f967785](https://github.com/kaissalha/frontend-common/commit/f967785eb389b59023866dd4ca3911d7042b81bc))
+* zoom bug ([9f7a23b](https://github.com/kaissalha/frontend-common/commit/9f7a23bcd88f446833baa6c934eaf4a1a05bed9a))
+
 ## [1.10.1](https://github.com/kaissalha/frontend-common/compare/v1.10.0...v1.10.1) (2023-07-07)
 
 
