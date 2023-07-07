@@ -52,7 +52,7 @@ export const getGeoByPoints = async ({
 		`/getGeoByPoints?ne_lat=${ne_lat}&ne_lng=${ne_lng}&sw_lat=${sw_lat}&sw_lng=${sw_lng}&geo_level=${geo_level}${
 			ids && parent_level
 				? `&ids=${ids.join(",")}&parent_level=${parent_level}`
-				: "&use_division=1"
+				: ""
 		}`,
 		{ signal }
 	);
