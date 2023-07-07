@@ -22,7 +22,6 @@ export const useGeos = ({
 		sw_lng,
 		geo_level: "division",
 		enabled,
-		keepPreviousData: zoom < 10,
 	});
 
 	const subdivisionsResponse = useGetGeoByParentIds({
@@ -37,6 +36,7 @@ export const useGeos = ({
 			enabled &&
 			!!divisionsResponse?.data?.polygons?.length &&
 			!divisionsResponse.isLoading &&
+			!divisionsResponse.isFetching &&
 			!divisionsResponse.isPreviousData,
 	});
 
@@ -51,7 +51,8 @@ export const useGeos = ({
 			enabled &&
 			!!divisionsResponse?.data?.polygons?.length &&
 			!divisionsResponse.isLoading &&
-			!divisionsResponse.isPreviousData,
+			!divisionsResponse.isFetching &&
+			!divisionsResponse?.isPreviousData,
 	});
 
 	return {
