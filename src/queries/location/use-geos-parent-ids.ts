@@ -38,7 +38,8 @@ export const useGeosParentIds = ({
 		parent_level: "division",
 		ids,
 		enabled:
-			zoom > 11 &&
+			zoom > 8 &&
+			zoom < 12 &&
 			enabled &&
 			!!divisionsResponse?.data?.polygons?.length &&
 			!divisionsResponse.isLoading &&
