@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.10](https://github.com/kaissalha/frontend-common/compare/v1.8.9...v1.8.10) (2023-07-07)
+
+
+### Bug Fixes
+
+* cancel old by points queries ([787a9bc](https://github.com/kaissalha/frontend-common/commit/787a9bc98319e7be554caf164ec7617ab8bda707))
+* cancel old by points queries ([3d41a2b](https://github.com/kaissalha/frontend-common/commit/3d41a2b959c2af391262b5f2b9d238df4ee628b6))
+
 ## [1.8.9](https://github.com/kaissalha/frontend-common/compare/v1.8.8...v1.8.9) (2023-07-06)
 
 
