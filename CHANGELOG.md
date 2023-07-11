@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.11.0](https://github.com/kaissalha/frontend-common/compare/v1.10.3...v1.11.0) (2023-07-11)
+
+
+### Features
+
+* fetch census data by geo id ([0f65638](https://github.com/kaissalha/frontend-common/commit/0f65638c0a50e57831043b87902fa7b31ec1117a))
+* fetch census data by geo id ([9c6f6a0](https://github.com/kaissalha/frontend-common/commit/9c6f6a00de5ff45fc6235246062ba51c06293629))
+
 ## [1.10.3](https://github.com/kaissalha/frontend-common/compare/v1.10.2...v1.10.3) (2023-07-07)
 
 
