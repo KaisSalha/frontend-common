@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.12.2](https://github.com/kaissalha/frontend-common/compare/v1.12.1...v1.12.2) (2023-07-11)
+
+
+### Bug Fixes
+
+* merge census data into 1 ([356fc87](https://github.com/kaissalha/frontend-common/commit/356fc8787524b8a008288c08cb764a1af056b548))
+* merge census data into 1 ([0e52331](https://github.com/kaissalha/frontend-common/commit/0e5233113f76b24248c102f1beca13766b7d9fc6))
+
 ## [1.12.1](https://github.com/kaissalha/frontend-common/compare/v1.12.0...v1.12.1) (2023-07-11)
 
 
