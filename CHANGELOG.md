@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.12.0](https://github.com/kaissalha/frontend-common/compare/v1.11.0...v1.12.0) (2023-07-11)
+
+
+### Features
+
+* fetch census in 1 call ([2be6972](https://github.com/kaissalha/frontend-common/commit/2be6972bd07f12ba4c9027e80df06a4c6459641b))
+* fetch census in 1 call ([5e8ccd8](https://github.com/kaissalha/frontend-common/commit/5e8ccd89aa620dbca861b8bdd3abe339b72b5002))
+
 ## [1.11.0](https://github.com/kaissalha/frontend-common/compare/v1.10.3...v1.11.0) (2023-07-11)
 
 
