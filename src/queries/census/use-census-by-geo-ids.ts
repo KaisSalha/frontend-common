@@ -1,4 +1,5 @@
 import { useQueries } from "@tanstack/react-query";
+import { useMemo } from "react";
 import { LocationApi } from "../../services/api";
 import { QUERY_IDS } from "../utils/query-ids";
 
@@ -23,8 +24,20 @@ export const useCensusByGeoIds = ({
 
 	const results = useQueries({ queries });
 
+	const data = useMemo(
+		() =>
+			results.reduce((acc, result) => {
+				if (result.data) {
+					return { ...acc, ...result.data.census };
+				}
+
+				return acc;
+			}, {}),
+		[results]
+	);
+
 	return {
-		data: results.map((result) => result.data),
+		data,
 		isLoading: results.some((result) => result.isLoading),
 		isError: results.some((result) => result.isError),
 	};
