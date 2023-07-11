@@ -1,16 +1,18 @@
 import { ApiClient } from "./utils/api-client";
 
+interface Census {
+	characteristic_id: number;
+	characteristic_name: string;
+	total: number;
+	men: number;
+	women: number;
+}
 export interface getCensusResult {
 	id: string;
-	census: {
-		dguid: number;
-		characteristic_id: number;
-		characteristic_name: string;
-		total: number;
-		men: number;
-		women: number;
-	}[];
+	census: Record<number, Census>;
 }
+
+export type CensusData = Record<string, getCensusResult>;
 
 /**
  * Manages requests to the location api.
@@ -27,15 +29,20 @@ ApiClient.registerService({
 	},
 });
 
-export interface getGeoByParentIdParams {
-	id: string;
+export interface getCensusByGeoIdsParams {
+	ids: string[];
+	signal?: AbortSignal;
 }
 
-export const getCensusByGeoId = async ({
-	id,
-}: getGeoByParentIdParams): Promise<getCensusResult> => {
+export const getCensusByGeoIds = async ({
+	ids,
+	signal,
+}: getCensusByGeoIdsParams): Promise<getCensusResult> => {
 	const response = await ApiClient.getClient(serviceName).get(
-		`/getCensusByGeoId?id=${id}`
+		`/getCensusByGeoIds?ids=${ids.join(",")}`,
+		{
+			signal,
+		}
 	);
 
 	return response.data;
