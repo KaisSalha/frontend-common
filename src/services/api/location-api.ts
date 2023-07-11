@@ -1,12 +1,14 @@
-import type { MultiPolygon } from "geojson";
 import { ApiClient } from "./utils/api-client";
 
-export interface getPolygonsResult {
-	polygons: {
-		id: string;
-		geo_name: string;
-		land_area: number;
-		geom: MultiPolygon;
+export interface getCensusResult {
+	id: string;
+	census: {
+		dguid: number;
+		characteristic_id: number;
+		characteristic_name: string;
+		total: number;
+		men: number;
+		women: number;
 	}[];
 }
 
@@ -25,57 +27,15 @@ ApiClient.registerService({
 	},
 });
 
-export type GeoLevel = "tract" | "division" | "subdivision";
-
-export interface getGeoByPointsParams {
-	ne_lat: number;
-	ne_lng: number;
-	sw_lat: number;
-	sw_lng: number;
-	geo_level: GeoLevel;
-	parent_level?: GeoLevel;
-	ids?: string[];
-	signal?: AbortSignal;
-}
-
-export const getGeoByPoints = async ({
-	ne_lat,
-	ne_lng,
-	sw_lat,
-	sw_lng,
-	geo_level,
-	parent_level,
-	ids,
-	signal,
-}: getGeoByPointsParams): Promise<getPolygonsResult> => {
-	const response = await ApiClient.getClient(serviceName).get(
-		`/getGeoByPoints?ne_lat=${ne_lat}&ne_lng=${ne_lng}&sw_lat=${sw_lat}&sw_lng=${sw_lng}&geo_level=${geo_level}${
-			ids && parent_level
-				? `&ids=${ids.join(",")}&parent_level=${parent_level}`
-				: ""
-		}`,
-		{ signal }
-	);
-
-	return response.data;
-};
-
 export interface getGeoByParentIdParams {
-	geo_level: GeoLevel;
-	parent_level: Omit<GeoLevel, "tract">;
 	id: string;
-	signal?: AbortSignal;
 }
 
-export const getGeosByParentId = async ({
+export const getCensusByGeoId = async ({
 	id,
-	geo_level,
-	parent_level,
-	signal,
-}: getGeoByParentIdParams): Promise<getPolygonsResult> => {
+}: getGeoByParentIdParams): Promise<getCensusResult> => {
 	const response = await ApiClient.getClient(serviceName).get(
-		`/getGeosByParentId?id=${id}&geo_level=${geo_level}&parent_level=${parent_level}`,
-		{ signal }
+		`/getCensusByGeoId?id=${id}`
 	);
 
 	return response.data;
