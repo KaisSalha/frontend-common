@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.12.1](https://github.com/kaissalha/frontend-common/compare/v1.12.0...v1.12.1) (2023-07-11)
+
+
+### Bug Fixes
+
+* chunk census data ([14dd390](https://github.com/kaissalha/frontend-common/commit/14dd3908abe1f979153aaa6a81433df10eaae4a8))
+* chunk census data ([0e8bdeb](https://github.com/kaissalha/frontend-common/commit/0e8bdeb4939cef6620474656a89fde8789660c67))
+
 ## [1.12.0](https://github.com/kaissalha/frontend-common/compare/v1.11.0...v1.12.0) (2023-07-11)
 
 
