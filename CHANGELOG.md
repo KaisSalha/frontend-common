@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.13.0](https://github.com/kaissalha/frontend-common/compare/v1.12.2...v1.13.0) (2023-08-08)
+
+
+### Features
+
+* remove legacy hook + add number utils ([82f383c](https://github.com/kaissalha/frontend-common/commit/82f383c3ef0b9bdc003b119fdf6a5af3c1673839))
+* remove legacy hook + add number utils ([22d71dc](https://github.com/kaissalha/frontend-common/commit/22d71dc1918c4f9f6b6ee4cc2c8ece0a981c939f))
+
 ## [1.12.2](https://github.com/kaissalha/frontend-common/compare/v1.12.1...v1.12.2) (2023-07-11)
 
 
