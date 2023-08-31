@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.14.0](https://github.com/kaissalha/frontend-common/compare/v1.13.0...v1.14.0) (2023-08-31)
+
+
+### Features
+
+* update deps ([ff072e2](https://github.com/kaissalha/frontend-common/commit/ff072e2b72d714eb4e137249e5a89f3429615841))
+* update deps ([1de1903](https://github.com/kaissalha/frontend-common/commit/1de19034ded985b901a636928bb9c1c648ddee60))
+
 ## [1.13.0](https://github.com/kaissalha/frontend-common/compare/v1.12.2...v1.13.0) (2023-08-08)
 
 
